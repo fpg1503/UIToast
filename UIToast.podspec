@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "UIToast"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "An Objective-C class that adds Android-style toast notifications to iOS."
 
   s.description  = <<-DESC
