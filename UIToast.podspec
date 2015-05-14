@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "UIToast"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "An Objective-C class that adds Android-style toast notifications to iOS."
 
   s.description  = <<-DESC
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/fpg1503/UIToast.git", :tag => "v0.0.1" }
+  s.source       = { :git => "https://github.com/fpg1503/UIToast.git", :tag => "v0.0.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
