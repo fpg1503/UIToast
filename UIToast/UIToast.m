@@ -52,7 +52,7 @@ static const NSString *UIToastTimerKey = @"UIToastTimerKey";
 
 - (void)show {
     dispatch_async(dispatch_get_main_queue(), ^{
-    [self.window.subviews[0] addSubview:self];
+    [self.window addSubview:self];
     self.layer.zPosition = CGFLOAT_MAX;
 
     self.textView.text = [NSString stringWithFormat:@"  %@  ", self.text]; // Make fix for longer texts
