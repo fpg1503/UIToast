@@ -70,7 +70,7 @@ static const NSString *UIToastTimerKey = @"UIToastTimerKey";
         animations:^{
           self.alpha = self.viewAlpha;
         }
-        completion:^(BOOL finished) {
+        completion:^(BOOL finished __unused) {
           NSTimer *timer =
               [NSTimer scheduledTimerWithTimeInterval:self.duration
                                                target:self
@@ -95,7 +95,7 @@ static const NSString *UIToastTimerKey = @"UIToastTimerKey";
         animations:^{
           self.alpha = 0.0;
         }
-        completion:^(BOOL finished) {
+        completion:^(BOOL finished __unused) {
           [self removeFromSuperview];
         }];
     });
@@ -105,7 +105,7 @@ static const NSString *UIToastTimerKey = @"UIToastTimerKey";
     [self hide];
 }
 
-- (void)timerDidFinish:(id)sender {
+- (void)timerDidFinish:(id __unused)sender {
     // Call delegate
     [self hide];
 }
@@ -161,7 +161,7 @@ static const NSString *UIToastTimerKey = @"UIToastTimerKey";
 }
 
 - (void)deviceDidRotate {
-    UIToastLog(@"Rotate");
+    UIToastLog(@"%@", @"Rotate");
     [self positionView];
 }
 

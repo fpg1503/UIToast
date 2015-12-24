@@ -25,7 +25,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)showToast:(UIButton *)sender {
+- (IBAction)showToast:(UIButton * __unused)sender {
     [[UIToast makeText:@"I'm a toast xD"] show];
 }
 @end
