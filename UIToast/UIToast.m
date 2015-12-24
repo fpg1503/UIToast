@@ -20,7 +20,7 @@
 
 @implementation UIToast
 
-static const CGFloat UIToastDefaultViewAlpha = 0.7;
+static const CGFloat UIToastDefaultViewAlpha = (float)0.7;
 static const NSTimeInterval UIToastDefaultDuration = 3.0;
 static const NSTimeInterval UIToastDefaultFadeInOut = 0.5;
 static const NSTimeInterval UIToastDefaultDelay = 0.0;
@@ -61,7 +61,7 @@ static const NSString *UIToastTimerKey = @"UIToastTimerKey";
     [self.textView sizeToFit];
     [self positionView];
 
-    self.layer.cornerRadius = self.roundEdges ? self.bounds.size.height / 2 : 0.0;
+    self.layer.cornerRadius = (float)(self.roundEdges ? self.bounds.size.height / 2 : 0.0);
 
     self.alpha = 0.0;
     [UIView animateWithDuration:self.fadeInTime
@@ -153,7 +153,7 @@ static const NSString *UIToastTimerKey = @"UIToastTimerKey";
     CGSize actualSize = [UIApplication currentSize];
 
     self.frame = CGRectMake(actualSize.width / 2 - self.textView.bounds.size.width / 2,
-                            actualSize.height * 0.85 - self.textView.bounds.size.height / 2,
+                            (float)(actualSize.height * 0.85 - self.textView.bounds.size.height / 2.0),
                             self.textView.bounds.size.width,
                             self.textView.bounds.size.height);
 
