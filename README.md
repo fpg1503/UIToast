@@ -1,5 +1,9 @@
 # UIToast
 An Objective-C class that adds Android-style toast notifications to iOS.
+[![CI Status](http://img.shields.io/travis/fpg1503/UIToast.svg?style=flat)](https://travis-ci.org/fpg1503/UIToast)
+[![Version](https://img.shields.io/cocoapods/v/UIToast.svg?style=flat)](http://cocoapods.org/pods/UIToast)
+[![License](https://img.shields.io/cocoapods/l/UIToast.svg?style=flat)](http://cocoapods.org/pods/UIToast)
+[![Platform](https://img.shields.io/cocoapods/p/UIToast.svg?style=flat)](http://cocoapods.org/pods/UIToast)
 
 ## Inspiration
 `UIToast` is shamefully inspired on [Android toasts](http://developer.android.com/guide/topics/ui/notifiers/toasts.html). If you can I would recommend on **not using toasts on iOS**. If you don't have a choice (like me when I wrote this pod) this might just be the perfect lib for you.
