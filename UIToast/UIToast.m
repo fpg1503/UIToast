@@ -161,7 +161,7 @@ static const NSString *UIToastTimerKey = @"UIToastTimerKey";
 }
 
 - (void)deviceDidRotate {
-    UIToastLog(@"%@", @"Rotate");
+    UIToastLog(@"Rotate");
     [self positionView];
 }
 

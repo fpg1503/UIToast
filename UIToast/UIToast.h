@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 
 #ifdef DEBUG_UITOAST
-#define UIToastLog(format, ...) NSLog(format, ##__VA_ARGS__)
+#define UIToastLog(...) NSLog(##__VA_ARGS__)
 #else
-#define UIToastLog(format, ...)
+#define UIToastLog(...)
 #endif
 
 @interface UIToast : UIView
