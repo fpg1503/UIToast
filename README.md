@@ -21,9 +21,9 @@ or simply
 
 ## Contributing and future improvements
 Feel free to open feature requests, issues and PRs. For now there is a small road map:
-- [ ]Add Travis CI
-- [ ]Create delegate for `UIToast`s
-- [ ]Improve support for multiple toasts on screen
-- [ ]Make it possible to customize position, color and font
-- [ ]Support custom views as toasts
-- [ ]Use autolayout
+- [ ] Add Travis CI
+- [ ] Create delegate for `UIToast`s
+- [ ] Improve support for multiple toasts on screen
+- [ ] Make it possible to customize position, color and font
+- [ ] Support custom views as toasts
+- [ ] Use autolayout
