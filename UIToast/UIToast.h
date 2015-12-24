@@ -16,6 +16,11 @@
 
 @interface UIToast : UIView
 
+- (nonnull instancetype)init __attribute__((unavailable("init not available, use initWithText:duration: instead")));
+- (nonnull instancetype)initWithFrame:(CGRect)frame __attribute__((unavailable("initWithFrame: not available, use initWithText:duration: instead")));
+- (nullable instancetype)initWithCoder:(nonnull NSCoder *)aDecoder __attribute__((unavailable("initWithCoder: not available, use initWithText:duration: instead")));
++ (nonnull instancetype)new __attribute__((unavailable("new not available, use initWithText:duration: instead")));
+
 /**
  *  Returns a UIToast with the given text that will remain on screen for the standard time period
  *
@@ -23,7 +28,7 @@
  *
  *  @return A UIToast with the given text
  */
-+ (UIToast *)makeText:(NSString *)text;
++ (nonnull UIToast *)makeText:(nonnull NSString *)text;
 
 /**
  *  Returns a UIToast with the given text that will remain on screen for the given period of time
@@ -33,7 +38,7 @@
  *
  *  @return A UIToast with the given text that will disappear after a given period of time
  */
-+ (UIToast *)makeText:(NSString *)text duration:(NSTimeInterval)duration;
++ (nonnull UIToast *)makeText:(nonnull NSString *)text duration:(NSTimeInterval)duration;
 
 /**
  *  Returns a UIToast with the given text that will remain on screen for the given period of time
@@ -43,7 +48,7 @@
  *
  *  @return A UIToast with the given text that will disappear after a given period of time
  */
-- (instancetype)initWithText:(NSString *)text duration:(NSTimeInterval)duration;
+- (nonnull instancetype)initWithText:(nonnull NSString *)text duration:(NSTimeInterval)duration NS_DESIGNATED_INITIALIZER;
 
 /**
  *  Shows the toast.
@@ -73,7 +78,7 @@
 /**
  *  Text of the toast.
  */
-@property (nonatomic, strong) NSString *text;
+@property (nonatomic, strong, nonnull) NSString *text;
 
 /**
  *  Fade in time. Defaults to 0.5.

@@ -29,7 +29,7 @@ static const CGFloat UIToastDefaultSystemFontSizeIncrement = 2.0;
 static const NSString *UIToastTimerKey = @"UIToastTimerKey";
 
 - (instancetype)initWithText:(NSString *)text duration:(NSTimeInterval)duration {
-    self = [super init];
+    self = [super initWithFrame:CGRectZero];
     if (self) {
 
         [self setUpTextView];
@@ -167,7 +167,7 @@ static const NSString *UIToastTimerKey = @"UIToastTimerKey";
 
 #pragma mark - Pseudo Window
 
-- (UIWindow *)window {
+- (nullable UIWindow *)window {
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     if (!window)
         window = [[UIApplication sharedApplication].windows objectAtIndex:0];
