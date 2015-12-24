@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#ifdef DEBUG_UITOAST
+#define UIToastLog(format, ...) NSLog(format, ##__VA_ARGS__)
+#else
+#define UIToastLog(format, ...)
+#endif
+
 @interface UIToast : UIView
 
 /**
